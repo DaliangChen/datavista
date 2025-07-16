@@ -1,0 +1,17 @@
+{
+    "markdown.preview.fontSize": 20,
+    "markdown.extension.print.onFileSave": true,
+    "explorer.sortOrder": "mixed",
+    "files.autoSave": "afterDelay",
+    "markdown.copyFiles.destination": {
+        "**/*": "${documentDirName}/${documentBaseName}/${fileName}"
+    },
+    "filewatcher.commands": [
+        {
+            "match": "识别.md",
+            "isAsync": false,
+            "cmd": "node ${workspaceRoot}/tihuan.mjs ${file}",
+            "event": "onFileChange"
+        }
+    ],
+}

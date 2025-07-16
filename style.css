@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 0;
+  border-color: black !important;
+}
+
+body {
+  width: 35em;
+}
+
+a {
+  color: blue;
+}
+
+strong {
+  font-weight: normal;
+  color: red;
+}
+
+.cjk_fallback {
+  font-family: -apple-system;
+  font-size: 20px;
+}
