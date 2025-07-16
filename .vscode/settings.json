@@ -14,4 +14,8 @@
             "event": "onFileChange"
         }
     ],
+    "editor.formatOnSave": true,
+    "[python]": {
+        "editor.formatOnType": true,
+    }
 }
