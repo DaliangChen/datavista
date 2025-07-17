@@ -8,11 +8,17 @@
     },
     "filewatcher.commands": [
         {
-            "match": "识别.md",
+            "match": "preprocess.md",
             "isAsync": false,
-            "cmd": "node ${workspaceRoot}/tihuan.mjs ${file}",
+            "cmd": "node ${workspaceRoot}/preprocess.mjs ${file}",
             "event": "onFileChange"
-        }
+        },
+        {
+            "match": "theory.md",
+            "isAsync": false,
+            "cmd": "node ${workspaceRoot}/note/theory.mjs ${file}",
+            "event": "onFileChange"
+        },
     ],
     "editor.formatOnSave": true,
     "[python]": {
