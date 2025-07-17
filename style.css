@@ -29,3 +29,7 @@ strong {
   font-family: -apple-system;
   font-size: 20px;
 }
+
+th {
+  font-weight: normal;
+}
