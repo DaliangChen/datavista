@@ -25,13 +25,15 @@ if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
     fs.writeFileSync(file, content, 'utf8');
 }
 
-if (file.toLocaleLowerCase().endsWith('note\\theory.md')) {
+if (file.toLocaleLowerCase().endsWith('note\\math.md')) {
 
     let content = fs.readFileSync(file, 'utf8');
 
     content = content
         .replace(/。/g, '. ')
         .replace(/，/g, ', ')
+        .replace(/）/g, ')')
+        .replace(/（/g, '(')
 
     fs.writeFileSync(file, content, 'utf8');
 }
