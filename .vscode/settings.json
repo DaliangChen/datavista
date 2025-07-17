@@ -8,17 +8,11 @@
     },
     "filewatcher.commands": [
         {
-            "match": "preprocess.md",
+            "match": "\\.md*",
             "isAsync": false,
-            "cmd": "node ${workspaceRoot}/js/preprocess.mjs ${file}",
+            "cmd": "node ${workspaceRoot}/preprocess.mjs ${file}",
             "event": "onFileChange"
         },
-        {
-            "match": ".*\\theory.md",
-            "isAsync": false,
-            "cmd": "node ${workspaceRoot}/js/normalize.mjs ${file}",
-            "event": "onFolderChange"
-        }
     ],
     "editor.formatOnSave": true,
     "[python]": {

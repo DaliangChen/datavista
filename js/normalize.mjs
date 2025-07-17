@@ -5,7 +5,7 @@ const file = process.argv[2];
 let content = fs.readFileSync(file, 'utf8');
 
 content = content
-    .replace(/，/g, ', ')
+    // .replace(/，/g, ', ')
 
 fs.writeFileSync(file, content, 'utf8');
 
