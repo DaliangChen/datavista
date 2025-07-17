@@ -1,23 +1,37 @@
 import * as fs from 'fs';
 
-const wenjian = process.argv[2];
-console.log(`Processing file: ${wenjian}`);
+const file = process.argv[2];
 
+console.log(`Processing file: ${file}`);
 
-// let content = fs.readFileSync(wenjian, 'utf8');
+if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
 
-// content = content
-//     .replace(/\\\( /g, '$')
-//     .replace(/ \\\)/g, '$')
-//     .replace(/\\\[ /g, '$$$')
-//     .replace(/ \\\]/g, '$$$')
-//     .replace(/\\\(/g, '$')
-//     .replace(/\\\)/g, '$')
-//     .replace(/\\\[/g, '$$$')
-//     .replace(/\\\]/g, '$$$')
-//     .replace(/\$([\u4e00-\u9fa5])/g, "$ $1")
-//     .replace(/([\u4e00-\u9fa5])\$/g, "$1 \$")
-//     .replace(/^#+\s*(.*)$/gm, '**$1**')
-//     .replaceAll('\mathcal', '\mathscr')
+    let content = fs.readFileSync(file, 'utf8');
 
-// fs.writeFileSync(wenjian, content, 'utf8');
+    content = content
+        .replace(/\\\( /g, '$')
+        .replace(/ \\\)/g, '$')
+        .replace(/\\\[ /g, '$$$')
+        .replace(/ \\\]/g, '$$$')
+        .replace(/\\\(/g, '$')
+        .replace(/\\\)/g, '$')
+        .replace(/\\\[/g, '$$$')
+        .replace(/\\\]/g, '$$$')
+        .replace(/\$([\u4e00-\u9fa5])/g, "$ $1")
+        .replace(/([\u4e00-\u9fa5])\$/g, "$1 \$")
+        .replace(/^#+\s*(.*)$/gm, '**$1**')
+        .replaceAll('\mathcal', '\mathscr')
+
+    fs.writeFileSync(file, content, 'utf8');
+}
+
+if (file.toLocaleLowerCase().endsWith('note\\theory.md')) {
+
+    let content = fs.readFileSync(file, 'utf8');
+
+    content = content
+        .replace(/。/g, '. ')
+        .replace(/，/g, ', ')
+
+    fs.writeFileSync(file, content, 'utf8');
+}
