@@ -1,83 +1,66 @@
-这行代码是使用 `pandas` 的 `concat()` 函数将两个 DataFrame 合并，并通过 `keys` 参数给它们加上一个多级索引。下面是逐步解析：
+
+输出结果：
+
+```
+city      Beijing  Shanghai
+date
+2024-01         5         8
+2024-02         7        10
+```
+
+解释：
+
+* `index="date"`：按月份排列行；
+* `columns="city"`：将 `city` 中的唯一值（Beijing、Shanghai）转成列；
+* `values="temperature"`：填入表格中的数值。
 
 ---
 
-**📌 原始代码：**
+**🧨 注意事项：不能有重复项！**
+
+如果数据中出现 `index + columns` 的组合重复，`pivot()` 会报错：
 
 ```python
-air_quality_ = pd.concat([air_quality_pm25, air_quality_no2], keys=["PM25", "NO2"])
+ValueError: Index contains duplicate entries, cannot reshape
 ```
 
----
-
-**📘 各部分含义：**
-
-**1. `pd.concat([...])`**
-
-* `pandas.concat()` 是用于拼接多个 DataFrame 的函数。
-* 默认情况下是按行拼接（`axis=0`），也可以指定按列拼接（`axis=1`）。
-
-**2. `[air_quality_pm25, air_quality_no2]`**
-
-* 这是一个 DataFrame 列表，表示要拼接的两个数据集：
-
-  * `air_quality_pm25`：可能是 PM2.5 的空气质量数据。
-  * `air_quality_no2`：可能是 NO2 的空气质量数据。
-
-**3. `keys=["PM25", "NO2"]`**
-
-* 这个参数会为每个传入的 DataFrame 添加一个“外层索引”，形成 **多级索引（MultiIndex）**。
-* 最终结果中的行索引就变成了两层：
-
-  * 第一层是 `PM25` 或 `NO2`（表明原始数据来源）。
-  * 第二层是原始 DataFrame 的索引。
+解决方法：使用 `pivot_table()` 替代（它支持聚合）。
 
 ---
 
-**✅ 举个例子：**
+**🔁 pivot vs pivot\_table**
 
-假设：
+| 方法            | 是否支持重复项 | 是否支持聚合 | 默认聚合函数     |
+| ------------- | ------- | ------ | ---------- |
+| `pivot`       | ❌ 不支持   | ❌ 不支持  | 无          |
+| `pivot_table` | ✅ 支持    | ✅ 支持   | `mean`（可改） |
+
+例如：
 
 ```python
-air_quality_pm25 =
-   value
-0   10
-1   20
-
-air_quality_no2 =
-   value
-0   30
-1   40
+df.pivot_table(index="date", columns="city", values="temperature", aggfunc="mean")
 ```
 
-执行：
+---
+
+**🔄 反向操作：`melt`**
+
+如果你使用了 `pivot` 让数据变宽，想恢复成长格式，可以用 `melt`：
 
 ```python
-pd.concat([air_quality_pm25, air_quality_no2], keys=["PM25", "NO2"])
+df_pivot.reset_index().melt(id_vars="date", value_name="temperature")
 ```
-
-结果是：
-
-```
-         value
-PM25 0      10
-     1      20
-NO2  0      30
-     1      40
-```
-
-这里的行索引是 MultiIndex，第一层是 `"PM25"` 或 `"NO2"`，第二层是原来的数字索引。
 
 ---
 
-**✅ 用途：**
+**🧠 总结**
 
-这种结构非常适合做：
-
-* 分组分析
-* 层级索引访问（例如：`air_quality_.loc["PM25"]` 直接取出 PM2.5 数据）
-* 合并来自多个数据源但结构一致的数据
+| 功能            | 描述                               |
+| ------------- | -------------------------------- |
+| `pivot`       | 按 index/columns 重排表格；必须无重复；只用于重构 |
+| `pivot_table` | 同上，但允许重复并能聚合                     |
+| `melt`        | 把宽表“还原”为长表                       |
 
 ---
 
-如果你有具体的数据结构，也可以贴出来，我可以更具体地帮你解释结果。
+如果你有具体的应用场景，比如财务表、销售报表、考勤数据等，我可以给出对应的 `pivot` 实战案例。需要吗？
