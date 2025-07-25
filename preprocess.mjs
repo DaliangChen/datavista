@@ -21,6 +21,7 @@ if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
         .replace(/([\u4e00-\u9fa5])\$/g, "$1 \$")
         .replace(/^#+\s*(.*)$/gm, '**$1**')
         .replaceAll('\mathcal', '\mathscr')
+        .replaceAll('**', '')
 
     fs.writeFileSync(file, content, 'utf8');
 }
