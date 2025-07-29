@@ -3,6 +3,7 @@ import * as fs from 'fs';
 const file = process.argv[2];
 
 console.log(`Processing file: ${file}`);
+const emojiPattern = /[\u{1F300}-\u{1F6FF}\u{1F900}-\u{1F9FF}\u{1FA70}-\u{1FAFF}]/gu;
 
 if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
 
@@ -23,6 +24,7 @@ if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
         .replaceAll('\mathcal', '\mathscr')
         .replaceAll('**', '')
         .replace(/^---$/gm, '')
+        .replace(emojiPattern, '')
 
     fs.writeFileSync(file, content, 'utf8');
 }
