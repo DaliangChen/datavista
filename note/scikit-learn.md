@@ -785,7 +785,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 1.17.8. More control with warm_start
 
-# 2\. Unsupervised learning
+# 2. Unsupervised learning
 
 ## 2.1. Gaussian mixture models
 
@@ -895,7 +895,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 2.9.1. Restricted Boltzmann machines
 
-# 3\. Model selection and evaluation
+# 3. Model selection and evaluation
 
 ## 3.1. Cross-validation: evaluating estimator performance
 
@@ -949,7 +949,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 3.5.2. Learning curve
 
-# 4\. Metadata Routing
+# 4. Metadata Routing
 
 ## 4.1. Usage Examples
 
@@ -965,7 +965,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ## 4.3. Metadata Routing Support Status
 
-# 5\. Inspection
+# 5. Inspection
 
 ## 5.1. Partial Dependence and Individual Conditional Expectation plots
 
@@ -985,13 +985,13 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 5.2.3. Misleading values on strongly correlated features
 
-# 6\. Visualizations
+# 6. Visualizations
 
 ## 6.1. Available Plotting Utilities
 
 ### 6.1.1. Display Objects
 
-# 7\. Dataset transformations
+# 7. Dataset transformations
 
 ## 7.1. Pipelines and composite estimators
 
@@ -1103,7 +1103,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 7.9.2. Label encoding
 
-# 8\. Dataset loading utilities
+# 8. Dataset loading utilities
 
 ## 8.1. Toy datasets
 
@@ -1157,7 +1157,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 8.4.4. Loading from external datasets
 
-# 9\. Computing with scikit-learn
+# 9. Computing with scikit-learn
 
 ## 9.1. Strategies to scale computationally: bigger data
 
@@ -1177,7 +1177,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 9.3.2. Configuration switches
 
-# 10\. Model persistence
+# 10. Model persistence
 
 ## 10.1. Workflow Overview
 
@@ -1197,7 +1197,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ## 10.6. Summarizing the key points
 
-# 11\. Common pitfalls and recommended practices
+# 11. Common pitfalls and recommended practices
 
 ## 11.1. Inconsistent preprocessing
 
@@ -1215,7 +1215,7 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 11.3.3. General recommendations
 
-# 12\. Dispatching
+# 12. Dispatching
 
 ## 12.1. Array API support (experimental)
 
@@ -1227,9 +1227,9 @@ LARS 是一种类似于前向逐步回归的算法，在每一步中只引入最
 
 ### 12.1.4. Common estimator checks
 
-# 13\. Choosing the right estimator
+# 13. Choosing the right estimator
 
-# 14\. External Resources, Videos and Talks
+# 14. External Resources, Videos and Talks
 
 ## 14.1. The scikit-learn MOOC
 
