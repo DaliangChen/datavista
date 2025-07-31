@@ -23,6 +23,8 @@ if (file.toLocaleLowerCase().endsWith('preprocess.md')) {
         .replace(/^#+\s*(.*)$/gm, '**$1**')
         .replaceAll('\mathcal', '\mathscr')
         .replaceAll('**', '')
+        .replaceAll('1️⃣', '')
+        .replaceAll('2️⃣', '')
         .replace(/^---$/gm, '')
         .replace(emojiPattern, '')
 
