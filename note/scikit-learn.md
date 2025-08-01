@@ -22,7 +22,7 @@
     - [1.1.16. Robustness regression: outliers and modeling errors](scikit-learn/robustness-regression-outliers-and-modeling-errors.md)
     - [1.1.17. Quantile Regression](scikit-learn/quantile-regression.md)
     - [1.1.18. Polynomial regression: extending linear models with basis functions](scikit-learn/polynomial-regression-extending-linear-models-with-basis-functions.md)
-  - [1.2. Linear and Quadratic Discriminant Analysis](https://scikit-learn.org/stable/modules/lda_qda.html)
+  - 1.2. Linear and Quadratic Discriminant Analysis
     - [1.2.1. Dimensionality reduction using Linear Discriminant Analysis](https://scikit-learn.org/stable/modules/lda_qda.html#dimensionality-reduction-using-linear-discriminant-analysis)
     - [1.2.2. Mathematical formulation of the LDA and QDA classifiers](https://scikit-learn.org/stable/modules/lda_qda.html#mathematical-formulation-of-the-lda-and-qda-classifiers)
     - [1.2.3. Mathematical formulation of LDA dimensionality reduction](https://scikit-learn.org/stable/modules/lda_qda.html#mathematical-formulation-of-lda-dimensionality-reduction)
