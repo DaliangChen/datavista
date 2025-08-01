@@ -2,8 +2,6 @@
 
 # User Guide
 
-使用场景 基本原理 注意事项
-
 1. Supervised learning
    1. Linear Models
       1. [Ordinary Least Squares](scikit-learn/ordinary-least-squares.md)
@@ -11,12 +9,12 @@
       3. [Lasso](scikit-learn/lasso.md)
       4. [Multi-task Lasso](scikit-learn/multi-task-lasso.md)
       5. [Elastic-Net](scikit-learn/elastic-net.md)
-      6. [Multi-task Elastic-Net](scikit-learn/defaulte.md)
-      7. [Least Angle Regression](scikit-learn/defaulte.md)
-      8. [LARS Lasso](scikit-learn/defaulte.md)
-      9. [Orthogonal Matching Pursuit (OMP)](scikit-learn/defaulte.md)
-      10. [Bayesian Regression](scikit-learn/defaulte.md)
-      11. [Logistic regression](scikit-learn/defaulte.md)
+      6. [Multi-task Elastic-Net](scikit-learn/multi-task-elastic-net.md)
+      7. [Least Angle Regression](scikit-learn/least-angle-regression.md)
+      8. [LARS Lasso](scikit-learn/lars-lasso.md)
+      9. [Orthogonal Matching Pursuit (OMP)](scikit-learn/orthogonal-matching-pursuit-omp.md)
+      10. [Bayesian Regression](scikit-learn/bayesian-regression.md)
+      11. [Logistic regression](scikit-learn/logistic-regression.md)
       12. [Generalized Linear Models](scikit-learn/defaulte.md)
       13. [Stochastic Gradient Descent - SGD](scikit-learn/defaulte.md)
       14. [Perceptron](scikit-learn/defaulte.md)
@@ -24,7 +22,7 @@
       16. [Robustness regression: outliers and modeling errors](scikit-learn/defaulte.md)
       17. [Quantile Regression](scikit-learn/defaulte.md)
       18. [Polynomial regression: extending linear models with basis functions](scikit-learn/defaulte.md)
-   2. [Linear and Quadratic Discriminant Analysis](scikit-learn/defaulte.md)
+   2. Linear and Quadratic Discriminant Analysis
       1. [Dimensionality reduction using Linear Discriminant Analysis](scikit-learn/defaulte.md)
       2. [Mathematical formulation of the LDA and QDA classifiers](scikit-learn/defaulte.md)
       3. [Mathematical formulation of LDA dimensionality reduction](scikit-learn/defaulte.md)
