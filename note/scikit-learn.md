@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="../style.css">
 
-# User Guide
+# scikit-learn
+
+## User Guide
 
 - 1. Supervised learning
   - 1.1. Linear Models
