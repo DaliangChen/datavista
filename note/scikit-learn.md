@@ -157,22 +157,22 @@
     - [2.5.6. Independent component analysis (ICA)](https://scikit-learn.org/stable/modules/decomposition.html#independent-component-analysis-ica)
     - [2.5.7. Non-negative matrix factorization (NMF or NNMF)](https://scikit-learn.org/stable/modules/decomposition.html#non-negative-matrix-factorization-nmf-or-nnmf)
     - [2.5.8. Latent Dirichlet Allocation (LDA)](https://scikit-learn.org/stable/modules/decomposition.html#latent-dirichlet-allocation-lda)
-  - [2.6. Covariance estimation](https://scikit-learn.org/stable/modules/covariance.html)
-    - [2.6.1. Empirical covariance](https://scikit-learn.org/stable/modules/covariance.html#empirical-covariance)
-    - [2.6.2. Shrunk Covariance](https://scikit-learn.org/stable/modules/covariance.html#shrunk-covariance)
-    - [2.6.3. Sparse inverse covariance](https://scikit-learn.org/stable/modules/covariance.html#sparse-inverse-covariance)
-    - [2.6.4. Robust Covariance Estimation](https://scikit-learn.org/stable/modules/covariance.html#robust-covariance-estimation)
-  - [2.7. Novelty and Outlier Detection](https://scikit-learn.org/stable/modules/outlier_detection.html)
-    - [2.7.1. Overview of outlier detection methods](https://scikit-learn.org/stable/modules/outlier_detection.html#overview-of-outlier-detection-methods)
-    - [2.7.2. Novelty Detection](https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection)
-    - [2.7.3. Outlier Detection](https://scikit-learn.org/stable/modules/outlier_detection.html#id1)
-    - [2.7.4. Novelty detection with Local Outlier Factor](https://scikit-learn.org/stable/modules/outlier_detection.html#novelty-detection-with-local-outlier-factor)
-  - [2.8. Density Estimation](https://scikit-learn.org/stable/modules/density.html)
-    - [2.8.1. Density Estimation: Histograms](https://scikit-learn.org/stable/modules/density.html#density-estimation-histograms)
-    - [2.8.2. Kernel Density Estimation](https://scikit-learn.org/stable/modules/density.html#kernel-density-estimation)
-  - [2.9. Neural network models (unsupervised)](https://scikit-learn.org/stable/modules/neural_networks_unsupervised.html)
-    - [2.9.1. Restricted Boltzmann machines](https://scikit-learn.org/stable/modules/neural_networks_unsupervised.html#restricted-boltzmann-machines)
-- [3. Model selection and evaluation](https://scikit-learn.org/stable/model_selection.html)
+  - 2.6. Covariance estimation
+    - 2.6.1. Empirical covariance
+    - 2.6.2. Shrunk Covariance
+    - 2.6.3. Sparse inverse covariance
+    - 2.6.4. Robust Covariance Estimation
+  - 2.7. Novelty and Outlier Detection
+    - 2.7.1. Overview of outlier detection methodshtml#overview-of-outlier-detection-methods)
+    - 2.7.2. Novelty Detection
+    - 2.7.3. Outlier Detection
+    - 2.7.4. Novelty detection with Local Outlier Factor
+  - 2.8. Density Estimation
+    - 2.8.1. Density Estimation: Histograms
+    - 2.8.2. Kernel Density Estimation
+  - 2.9. Neural network models (unsupervised)
+    - 2.9.1. Restricted Boltzmann machines
+- 3. Model selection and evaluation
   - [3.1. Cross-validation: evaluating estimator performance](https://scikit-learn.org/stable/modules/cross_validation.html)
     - [3.1.1. Computing cross-validated metrics](https://scikit-learn.org/stable/modules/cross_validation.html#computing-cross-validated-metrics)
     - [3.1.2. Cross validation iterators](https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation-iterators)
