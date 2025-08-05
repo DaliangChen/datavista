@@ -12,6 +12,10 @@ h6 {
   border-color: black !important;
 }
 
+h2 {
+  width: 75%;
+}
+
 body {
   width: 35em;
 }
