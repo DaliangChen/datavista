@@ -1,6 +1,6 @@
 {
     "markdown.preview.fontSize": 20,
-    "markdown.extension.print.onFileSave": true,
+    "markdown.extension.print.onFileSave": false,
     "explorer.sortOrder": "mixed",
     "files.autoSave": "afterDelay",
     "markdown.copyFiles.destination": {
