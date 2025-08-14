@@ -22,6 +22,8 @@ h3 {
 
 body {
   width: 35em;
+  font-family: "Noto Sans SC", "Microsoft YaHei", "PingFang SC", "Heiti SC",
+    sans-serif;
 }
 
 a {
